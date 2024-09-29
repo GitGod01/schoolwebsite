@@ -1,0 +1,207 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for better visibility */
+}
+
+.top-bar {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header {
+    background-color: #2980b9;
+    color: white;
+    padding: 20px;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-section {
+    position: relative;
+    background-color: #2980b9; /* Solid color background */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.welcome-message {
+    font-size: 3em;
+    margin: 0;
+}
+
+.welcome-image {
+    width: 200px; /* Adjust size for welcome image */
+    margin-top: 20px;
+}
+
+.inquiry-button {
+    background-color: #e74c3c; /* Red background for visibility */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block; /* Center the button */
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s; /* Animation effects */
+}
+
+.inquiry-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.inquiry-form {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Above other content */
+    width: 300px; /* Fixed width */
+}
+
+.inquiry-form h2 {
+    margin-top: 0; /* Remove margin from top */
+}
+
+.inquiry-form label {
+    display: block; /* Block display for labels */
+    margin-top: 10px; /* Spacing above labels */
+}
+
+.inquiry-form input {
+    width: calc(100% - 20px); /* Full width input */
+    padding: 10px;
+    margin-top: 5px; /* Space below inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.inquiry-form button {
+    background-color: #2980b9; /* Button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px; /* Space above button */
+    width: 100%; /* Full width button */
+}
+
+.inquiry-form button:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+}
+
+.close-button {
+    background-color: #e74c3c; /* Close button color */
+    margin-top: 10px; /* Space above button */
+}
+
+.close-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0; /* Margin above and below features */
+}
+
+.feature-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%; /* Width of feature cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap; /* Wrap for responsive design */
+    gap: 10px; /* Gap between images */
+}
+
+.gallery-grid img {
+    width: calc(33% - 10px); /* Responsive images */
+    border-radius: 5px;
+}
+
+.sports-gallery img {
+    width: calc(33% - 10px); /* Same as above */
+    border-radius: 5px;
+}
+
+.alumni-list {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center content */
+}
+
+.alumni-member {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0; /* Space between alumni reviews */
+    width: 300px; /* Fixed width for alumni reviews */
+}
+
+.contact-us {
+    background-color: #2980b9; /* Blue background */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Centered text */
+}
+
+.contact-us p {
+    margin: 0; /* No margin */
+}

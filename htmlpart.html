@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csspart.css">
+    <title>Drona Group of Institutions</title>
+</head>
+<body>
+
+    <div class="top-bar">
+        <h1>Welcome to Drona Group of Institutions</h1>
+    </div>
+
+    <header>
+        <div class="logo-nav">
+            <div class="logo">
+                <img src="https://i.ibb.co/1sPQ1gr/logo.png" alt="Drona Group Logo">
+                <h1>Drona Group of Institutions</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#campus-life">Campus Life</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <h1 class="welcome-message">Welcome to Drona Group of Institutions</h1>
+        <img class="welcome-image" src="welcome.jpeg" alt="Welcome Image">
+    </section>
+
+    <button class="inquiry-button" onclick="toggleInquiryForm()">Admission Inquiry</button>
+
+    <div id="inquiry-form" class="inquiry-form">
+        <form>
+            <h2>Admission Inquiry</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="percentage">Percentage in Previous Class:</label>
+            <input type="number" id="percentage" required>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required>
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" required>
+            <button type="submit">Submit</button>
+            <button type="button" class="close-button" onclick="toggleInquiryForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <h2>About Us</h2>
+            <p>We provide quality education from Pre Nursery to 12th grade, affiliated with CBSE.</p>
+        </div>
+        <div class="feature-card">
+            <h2>Academics</h2>
+            <p>Our curriculum is designed to foster a strong foundation in all subjects.</p>
+        </div>
+        <div class="feature-card">
+            <h2>Admissions</h2>
+            <p>Join us for a bright future! Check our admissions process.</p>
+        </div>
+    </div>
+
+    <section class="about-us" id="about">
+        <h2>About Us</h2>
+        <p>Drona Group of Institutions is dedicated to providing quality education to children of all ages. Our aim is to nurture the future leaders of tomorrow.</p>
+    </section>
+
+    <section class="academics" id="academics">
+        <h2>Academics</h2>
+        <p>We offer a robust curriculum from Pre Nursery to 12th grade, following the CBSE guidelines.</p>
+    </section>
+
+    <section class="sports" id="sports">
+        <h2>Sports</h2>
+        <div class="sports-gallery">
+            <img src="sports.jpeg" alt="Sport Image 1">
+            <img src="sports2.jpeg" alt="Sport Image 2">
+            <img src="sports3.jpeg" alt="Sport Image 3">
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="school1.webp" alt="Gallery Image 1">
+            <img src="school2.webp" alt="Gallery Image 2">
+            <img src="school3.jpeg" alt="Gallery Image 3">
+            <img src="school4.jpeg" alt="Gallery Image 4">
+            <img src="school5.webp" alt="Gallery Image 5">
+        </div>
+    </section>
+
+    <section class="alumni">
+        <h2>Alumni Reviews</h2>
+        <div class="alumni-list">
+            <div class="alumni-member">
+                <p><strong>Rajesh Kumar</strong></p>
+                <p>Marks: 85%</p>
+                <p>“Drona Group provided me the best education and support throughout my academic journey!”</p>
+            </div>
+            <div class="alumni-member">
+                <p><strong>Sita Sharma</strong></p>
+                <p>Marks: 90%</p>
+                <p>“The faculty at Drona is truly dedicated and helped me excel in my studies.”</p>
+            </div>
+            <div class="alumni-member">
+                <p><strong>Amit Verma</strong></p>
+                <p>Marks: 92%</p>
+                <p>“A wonderful school that shaped my future and inspired me to pursue my dreams!”</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us" id="contact">
+        <h2>Contact Us</h2>
+        <p>Plot 194, Misripur, Shahjahanpur, 242001</p>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2024 Drona Group of Institutions. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <p>Affiliated with CBSE.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleInquiryForm() {
+            const form = document.getElementById('inquiry-form');
+            form.style.display = (form.style.display === 'none' || form.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>
